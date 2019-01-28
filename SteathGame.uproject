@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.20",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "SteathGame",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
