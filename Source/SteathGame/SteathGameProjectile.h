@@ -6,6 +6,8 @@
 #include "GameFramework/Actor.h"
 #include "SteathGameProjectile.generated.h"
 
+class UParticleSystem;
+
 UCLASS(config=Game)
 class ASteathGameProjectile : public AActor
 {
@@ -18,6 +20,9 @@ class ASteathGameProjectile : public AActor
 	/** Projectile movement component */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Movement, meta = (AllowPrivateAccess = "true"))
 	class UProjectileMovementComponent* ProjectileMovement;
+
+	UPROPERTY(EditDefaultsOnly, Category = "FX")
+	UParticleSystem* ExplosionEffect;
 
 public:
 	ASteathGameProjectile();
